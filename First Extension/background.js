@@ -10,4 +10,4 @@ chrome.runtime.onInstalled.addListener ( function () {
     "contexts": ["page"],
     "onclick": incFont
   })
-})
+});
