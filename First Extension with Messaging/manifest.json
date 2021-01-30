@@ -1,0 +1,19 @@
+{
+  "name": "Extension with messaging",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Increases the font size",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": ["contextMenus", "activeTab"],
+  "icons": {
+    "128": "plus.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
